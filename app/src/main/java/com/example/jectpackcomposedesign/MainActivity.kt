@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JectpackComposeDesignTheme {
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier.wrapContentSize(),
                     color = Color(R.color.forCharacterMaterialCardViewColor)
                 ) {
                     CharacterCard()
@@ -45,11 +45,11 @@ fun CharacterCard() {
             .fillMaxWidth()
             .padding(16.dp),
         shape = MaterialTheme.shapes.medium,
-        colors = CardDefaults.cardColors(MaterialTheme.colorScheme.surface)
+        colors = CardDefaults.cardColors(Color.Gray)
     ) {
         Row(
             modifier = Modifier
-                .fillMaxSize()
+                .wrapContentSize()
                 .padding(16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
