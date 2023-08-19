@@ -54,7 +54,7 @@ fun CharacterCard() {
             CharacterImage()
             Spacer(modifier = Modifier.width(16.dp))
             Column {
-                CharacterNam()
+                CharacterName()
                 CharacterStatus()
                 CharacterSpecies()
                 CharacterType()
@@ -78,7 +78,7 @@ fun CharacterImage() {
 }
 
 @Composable
-fun CharacterNam() {
+fun CharacterName() {
     Text(
         text = "Centaur",
         fontWeight = FontWeight.Bold,
